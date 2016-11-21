@@ -10,6 +10,3 @@ def sprawdz(L):
 				return False
 		
 	return True
-		
-print sprawdz([1,2,3])
-print sprawdz([1,"b"])
