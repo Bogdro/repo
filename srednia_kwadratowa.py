@@ -1,3 +1,4 @@
+from tools import sprawdz
 import math
 import myerror
 def srednia_kwadratowa(liczby):
@@ -6,8 +7,10 @@ def srednia_kwadratowa(liczby):
 	
 	liczby - list,tuple
 	"""
-	if type(liczby) != list and type(liczby) != tuple:
-		raise myerror.IBeBack()
+	#if type(liczby) != list and type(liczby) != tuple:
+        ##if sprawdz(liczby) == False:
+		##raise myerror.IBeBack()
+        assert sprawdz(liczby)
 	for i in range(len(liczby)):
 		liczby[i] = float(liczby[i]*liczby[i])
 	wynik = sum (liczby)
